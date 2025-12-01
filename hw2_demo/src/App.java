@@ -13,7 +13,8 @@ public class App {
             numbers[i] = random.nextInt(100); // values between 0 and 99
         }
 
-        System.out.println("Original numbers from Berkant:");
+        System.out.println("Original numbers (merged from Berkant & friend):");
+
         for (int i = 0; i < numbers.length; i++) {
             System.out.println("Index " + i + ": " + numbers[i]);
         }
