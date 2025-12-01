@@ -7,14 +7,6 @@ public class App {
 
         Random random = new Random();
 
-
-
-        System.out.println("DEBUG: this line will be reverted");
-
-
-
-
-
         // Fill with random values
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = random.nextInt(100); // 0–99
@@ -25,5 +17,4 @@ public class App {
             System.out.println("Index " + i + ": " + numbers[i]);
         }
     }
-    
 }
