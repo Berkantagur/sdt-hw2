@@ -1,8 +1,18 @@
+import java.util.Random;
+
 public class App {
     public static void main(String[] args) {
-        int[] numbers = { 3, 7, 1, 9, 4 };
+        int size = 10;
+        int[] numbers = new int[size];
 
-        System.out.println("Table Values:");
+        Random random = new Random();
+
+        // Fill with random values
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = random.nextInt(100); // 0–99
+        }
+
+        System.out.println("Random table values:");
         for (int i = 0; i < numbers.length; i++) {
             System.out.println("Index " + i + ": " + numbers[i]);
         }
